@@ -1,0 +1,74 @@
+.investor-trends-page {
+  padding: 15px 0;
+}
+
+.filter-card {
+  margin-bottom: 30px;
+}
+
+.chart-container {
+  height: 400px;
+  position: relative;
+}
+
+.top-stocks-list {
+  margin-top: 15px;
+}
+
+.stock-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.stock-item:last-child {
+  border-bottom: none;
+}
+
+.stock-rank {
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.stock-info {
+  flex: 1;
+}
+
+.stock-name {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.stock-code {
+  font-size: 0.8rem;
+  color: var(--gray-color);
+}
+
+.stock-amount {
+  font-weight: 600;
+  text-align: right;
+  min-width: 80px;
+}
+
+.stock-amount.buy {
+  color: var(--danger-color);
+}
+
+.stock-amount.sell {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    height: 300px;
+  }
+}

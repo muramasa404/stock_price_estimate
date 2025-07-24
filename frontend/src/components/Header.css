@@ -1,0 +1,52 @@
+.header-navbar {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 70px;
+  padding: 0 20px;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-toggle {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.date-picker {
+  width: 180px;
+}
+
+.search-bar {
+  width: 300px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.react-datepicker-wrapper {
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    width: 200px;
+  }
+  
+  .date-picker {
+    width: 140px;
+  }
+}

@@ -1,0 +1,49 @@
+.dashboard-page {
+  padding: 15px 0;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.market-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fc 100%);
+}
+
+.market-card h4 {
+  color: var(--gray-color);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.market-card h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.chart-container {
+  position: relative;
+  margin: 0 auto;
+  height: 280px;
+}
+
+.card-title {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .market-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .chart-container {
+    height: 220px;
+  }
+}

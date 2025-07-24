@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #192a56;
+  --secondary-color: #273c75;
+  --accent-color: #1e90ff;
+  --light-color: #f5f6fa;
+  --dark-color: #2f3640;
+  --success-color: #2ecc71;
+  --warning-color: #f39c12;
+  --danger-color: #e74c3c;
+  --gray-color: #95a5a6;
+  --border-color: #dcdde1;
+  --sidebar-width: 240px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f8f9fc;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  transition: margin-left 0.3s;
+}
+
+.main-content.expanded {
+  margin-left: 0;
+}
+
+.content-container {
+  padding: 20px;
+  margin-top: 80px;
+}
+
+/* 공통 카드 스타일 */
+.dashboard-card {
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--border-color);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+/* 테이블 스타일 */
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stock-table th {
+  background-color: #f8f9fa;
+  color: var(--dark-color);
+  font-weight: 500;
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.stock-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.stock-table tr:hover {
+  background-color: #f1f2f6;
+}
+
+/* 등급별 색상 */
+.grade-s {
+  color: #1e3799;
+  font-weight: 700;
+}
+
+.grade-a {
+  color: #44bd32;
+  font-weight: 600;
+}
+
+.grade-b {
+  color: #718093;
+}
+
+/* 증감 표시 색상 */
+.price-up {
+  color: #e84118;
+}
+
+.price-down {
+  color: #0097e6;
+}
+
+/* 반응형 설정 */
+@media (max-width: 992px) {
+  .main-content {
+    margin-left: 0;
+  }
+  
+  .sidebar {
+    position: fixed;
+    z-index: 1000;
+    transform: translateX(-100%);
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}

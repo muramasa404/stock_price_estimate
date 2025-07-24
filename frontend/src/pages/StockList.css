@@ -1,0 +1,23 @@
+.stock-list-page {
+  padding: 15px 0;
+}
+
+.filter-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.sortable:hover {
+  background-color: #f9fafb;
+}
+
+.market-badge {
+  font-size: 0.7rem;
+  padding: 5px 8px;
+}
